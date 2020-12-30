@@ -15,7 +15,7 @@ getAll(){
 
 newPost(title, description){
   
-  posts.push({"id": generateID(), title, description});
+  this.posts.push({"id": generateID(), title, description});
 
 },
 
