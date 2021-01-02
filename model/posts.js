@@ -22,7 +22,7 @@ newPost(title, description){
 deletePost(id){
   for(let post of this.posts){
     if (id == post.id){
-      this.posts.splice(this.posts.indexOf(post.id), 1);
+      this.posts.splice(this.posts.findIndex(post => post.id == id), 1);
     }
   }
 },
